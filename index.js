@@ -252,15 +252,22 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   // console.log(array);
   // !!!come back to this one!!!;
-
+  let artists = [];
   // create the return array
+  for(let i = 0; i < array.length; i++) {
+    let artistYears = array[i].years;
+    // use includes?  Change the string into a number?
+    if ( artistYears.includes("")) {
+
+    }
+  }
   // go through each of the artists
   // check each artists lifespan and see if that lifespan falls in the range of the 20th century
   // push into array
 
 
   // needs to return an array that you probably pushed data into
-}
+};
 
 
 
@@ -274,9 +281,12 @@ function get20s(array){
   For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index){
-
   // !!! come back to this one !!!
   // return .length on that array after you take out one of the 
+  // delete array[i];
+  // use .splice?
+  array.splice(index, 1)
+  return array.length;
 }
 
 
@@ -297,6 +307,8 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
+    // push your object into the artists array
+    // then return it
     array.push("{ id: 20, name: Daniel, years: 1987 - 2/19, genre: Web Design, nationality: USA, bio: lorem ipsum}");
     return array;
 }
@@ -308,9 +320,21 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function lotsOfArt(array){
+  let artists = [];
+  for(let i = 0; i < array.length; i++) {
+  // !!! test case isn't passing, come back to this one!!!
+  // loop through array
+  // check if array.index.paintings are greater than 100
+  // push array.name into new array
+    if(array[i].paintings < 100) {
+      artists.push(array[i].name);
+    }
+  }
+  
+  return artists;
+
+};
 
 
 
