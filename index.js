@@ -353,7 +353,7 @@ function lotsOfArt(array){
   for(let i = 0; i < array.length; i++) {
   // !!! test case isn't passing, come back to this one!!!
   // loop through array
-  // check if array.index.paintings are greater than 100
+  // check if array.index.paintings is greater than 100
   // push array.name into new array
     if(array[i].paintings < 100) {
       artists.push(array[i].name);
