@@ -255,20 +255,48 @@ function get20s(array){
   let artists = [];
   // create the return array
   for(let i = 0; i < array.length; i++) {
-    let artistYears = array[i].years;
-    // use includes?  Change the string into a number?
-    if ( artistYears.includes("")) {
+    // let artistYears = array[i].years;
+    // // use includes?  Change the string into a number?
+    // if ( artistYears.includes("") / range of numbers) {
 
+    // }
+  let lifespan = array[i].years;
+  // console.log(lifespan);
+
+  // console.log(lifespan.split(" - "));
+
+  let lifespanArray = lifespan.split(" - ");
+  // console.log(lifespan[0])
+  // console.log(lifespanArray)
+  // console.log(Number(lifespanArray[0]))
+
+  // string and numbers, have to change it to number somehow
+    // console.log(Number(lifespan[0]))
+    // if (Number(lifespan[0]) > 1900 && Number(lifespan[1]) < 2000) {
+    //   artists.push(array[i].name);
+    // }
+
+    if(Number(lifespanArray[0]) > 1900 && Number(lifespanArray[1] < 2000)) {
+      // array[i].name.push(artists);
+      // console.log(array[i].name.push(artists))
+      let artistName = array[i].name;
+      artists.push(artistName);
+      console.log(artists);
     }
+
+    // console.log(array[i].years)
+    // change the strings to numbers
+
+    // console.log(Number(array[i].years))
+    
+
+    //try using split to isolate just the numbers
+    // console.log(array[i].split("-"))
+
+
   }
-  // go through each of the artists
-  // check each artists lifespan and see if that lifespan falls in the range of the 20th century
-  // push into array
-
-
-  // needs to return an array that you probably pushed data into
+  return artists;
 };
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
