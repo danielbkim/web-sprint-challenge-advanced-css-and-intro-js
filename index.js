@@ -355,9 +355,11 @@ function lotsOfArt(array){
   // loop through array
   // check if array.index.paintings is greater than 100
   // push array.name into new array
-    if(array[i].paintings < 100) {
+    if(array[i].paintings > 100) {
       artists.push(array[i].name);
     }
+
+    
   }
   
   return artists;
