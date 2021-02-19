@@ -22,6 +22,7 @@ vertical-align: baseline;
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
+    /* border: 1px solid gray; */
 }
 body{
     font-size:1.6rem;
@@ -133,4 +134,26 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+@media(max-width: 800px) {
+    body {
+        background-color: hotpink;
+        /* width: 100%; */
+    }
+    .bold {
+        font-weight: 800;
+    }
+    nav span {
+        padding: 5%;
+    };
+
+    /* why is this not working? */
+    .artist-container {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
 }

@@ -359,7 +359,6 @@ function lotsOfArt(array){
       artists.push(array[i].name);
     }
 
-    
   }
   
   return artists;
